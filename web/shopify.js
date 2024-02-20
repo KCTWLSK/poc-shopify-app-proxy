@@ -22,8 +22,8 @@ const billingConfig = {
 
 const shopify = shopifyApp({
   api: {
-    apiKey: 'f661c1f69845b867f52f4919fed582e9',
-    apiSecretKey: '26b6be0511fa732ebfcd71cffab5a0d3',
+    apiKey: 'SHOPIFY_API_KEY',
+    apiSecretKey: 'SHOPIFY_API_SECRET',
     scopes: ['read_orders', 'write_orders'],
     apiVersion: LATEST_API_VERSION,
     // restResources,

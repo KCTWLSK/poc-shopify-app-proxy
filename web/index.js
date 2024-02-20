@@ -43,7 +43,7 @@ app.all('/services/*', async (req, res, next) => {
     )
     .map(([key, val]) => `${key}=${val || ''}`)
     .join('');
-  const hmac = crypto.createHmac('sha256', '3d3cb9ca96b7b2540fcc27b06017cf73');
+  const hmac = crypto.createHmac('sha256', 'SHOPIFY_API_SECRET');
   const checksum = hmac.update(key).digest('hex');
 
   if (checksum !== signature) {
